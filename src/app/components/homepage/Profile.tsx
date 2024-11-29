@@ -16,7 +16,7 @@ export default function Profile() {
             />
             <div className="flex flex-col ml-10 p-4">
                 <div className='mb-8'>
-                    <div className='text-3xl font-black'>Goutam Das</div>
+                    <div className='text-3xl font-black mb-1'>Goutam Das</div>
                     <div>
                         <div className='text-sm font-thin ml-1'>Dortmund, Germany</div>
                         <div className='text-sm font-semibold ml-1 text-sky-600'>goutam2475@gmail.com</div>
