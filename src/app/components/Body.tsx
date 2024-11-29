@@ -1,5 +1,6 @@
 import Profile from "./Profile";
 import About from "./About";
+import Updates from "./Updates";
 
 export default function Body() {
   return (
@@ -7,6 +8,7 @@ export default function Body() {
       <div className="flex flex-col">
         <Profile />
         <About />
+        <Updates />
       </div>
     </div>
   );
