@@ -14,7 +14,7 @@ export default function BlogPost({content}: Props) {
     //const data = await getPostBySlug(slug);
     
     return (
-        <div>
+        <div className='prose'>
             <div>{content.frontmatter.title}</div>
             <MDXRemote {...content}/>
         </div>
@@ -33,12 +33,12 @@ export async function getStaticPaths() {
   }
   
   // This function fetches the data needed to render a page with a given slug
-  export async function getStaticProps({params,}: {params: Promise<{ slug: string }>}) {
-      const {slug} = await params;
-      const mdxSource = await getPostBySlug(slug);
-      return {
-        props: {
-            content: mdxSource,
-        },
-      };
-    }
+export async function getStaticProps({params,}: {params: Promise<{ slug: string }>}) {
+    const {slug} = await params;
+    const mdxSource = await getPostBySlug(slug);
+    return {
+      props: {
+          content: mdxSource,
+      },
+    };
+  }
